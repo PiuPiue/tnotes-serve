@@ -1,0 +1,15 @@
+package com.hao.tnotes.common.bean.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class NotesCodeAuthDto {
+
+    private String code;
+    private String password;
+
+}
