@@ -9,15 +9,15 @@ T-Notes 是一款基于 Spring Boot 构建的智能协作笔记平台，集成�
 
 ## ✨ 核心功能
 
-- ✅ 多人实时协作：基于 WebSocket 实现笔记内容实时同步
-- ✅ AI 辅助写作：集成 Spring AI + DeepSeek，支持语法检查、摘要生成等功能
+- ✅ 精细化权限控制：基于 Spring AOP + 注解 + 反射机制，设计基于ABAC的权限模型，实现对笔记本与笔记的联合共享、笔记独立权限管理、网盘文件分享等复杂权限场景进行统一精细化控制。
+- ✅ 多人实时协作：基于 WebSocket 搭配权限系统实现笔记内容实时同步
 - ✅ 文件上传优化：结合 Redis 缓存与 MinIO 实现分片上传、断点续传与秒传
-- ✅ 精细化权限控制：基于 ABAC 权限模型 + Spring AOP 实现多维度访问控制
+- ✅ AI 辅助写作：集成 Spring AI + DeepSeek，支持语法检查、摘要生成等功能
 - ✅ 异步任务解耦：使用 RabbitMQ 异步处理用户注册、文件处理等任务
 
 ## 🛠️ 技术栈
 
-- 后端：Spring Boot, Spring Security, Spring AOP, MyBatis Plus
+- 后端：Spring Boot, Sa-Token, Spring AOP, MyBatis Plus
 - 协作：WebSocket, Redis
 - 文件存储：MinIO, Redis
 - AI：Spring AI, DeepSeek
